@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en"> <!--etiqueta lang es un atributo para colocar el lenguaje-->
+<head> <!-- estos son metadatos -->
+    <meta charset="UTF-8"> <!--conjuntos de caracteres que vamos a utilizar ñ acentos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--escala en la cual se va a abrir la pagina en el dispositivo ya sea pc, notebook, celular-->
+    <title>Mi blog de anime</title><!--titulo que aparece en la pestaña del navegador que sea relevante-->
+<style>
+    table, th, td {
+        border:1px solid black ;
+    }
+</style>
+</head>
+
+<body><!--contenido que vemos en el navegador-->
+<!--Tablas-->
+<table style="width: 500px;">
+    <thead> <!--agrupa elemento dentro de la cabecera-->
+        <tr> <!--fila dentro de nuestra tabla-->
+            <th>producto</th> <!--cabecera de nuestr tabla-->
+            <th>precio</th>
+        </tr>
+    </thead>
+    <tbody>    <!--agrupa todas las filas de nuestra tabla-->
+        <tr>
+            <td> Manzana <!--elementos estanderes dentro de nuestra celda-->      
+            </td>
+            <td>$1000</td>
+        </tr>
+        <tr>
+            <td>Pera</td>          
+            <td>$2000</td>
+        </tr>
+        <tr>
+            <td>Banana de ecuador</td>          
+            <td>$2000</td>
+        </tr>
+    </tbody>
+    <tfoot> <!--pie de la tabla-->
+        <td></td>
+        <td> Total:$5000</td>
+    </tfoot>
+    
+</table>
+
+<!--listas-->
+<!--listas no ordenada-->
+<ul>
+    <li> Elemento 1</li>
+    <li> Elemento 2</li>
+    <li> Elemento 3</li>
+</ul>
+<!--listas  ordenada-->
+<ol>
+    <li> Elemento 1</li>
+    <li> Elemento 2</li>
+    <li> Elemento 3</li> 
+    <li>
+        <ol>
+            <li style="list-style: lower-alpha;">sube elemento1</li>
+            <li style="list-style: lower-alpha;">sub elemento1</li>
+            <li style="list-style: lower-alpha;">sub elemento1</li>
+        </ol>
+    </li>
+</ol>
+
+
+<!--FORMULARIOS-->
+<form action="/formulario.html"method="POST"> <!--ruta con el metodo a enviar nuestros datos del formulario-->
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" name="nombre" placeholder="nombre">
+    <br>
+    <label for="apellido">Apellido</label>
+    <input type="text" id="apellido" name="apellido" placeholder="apellido">
+    <br>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="email">
+    <br>
+    <label for="comentario">Comentario</label>
+    <textarea rows="5" cols="50" id="comentario" name="comentario" placeholder="ingrese un comentario"> </textarea>
+    <br>
+    <button  type= "submit">Enviar</button>
+    <button  type= "reset">Reset</button>
+</form>
+
+    <header><!--encabezado de mi pagina-->
+        <h1>Los mejores animes del mundo</h1> <!--etiqueta de titulos-->
+    </header>
+    <main> <!--cuerpo principal-->
+        <section> <!--secciones que se divide mi pagina-->
+            <h4>¿Qué es un anime</h4> <!--etiqueta de subtitulos-->
+            <!--etiqueta de parrafo es un ejemplo elemento en linea-->
+            <p> El anime es un estilo de animación tradicional o por computadora de origen japonés. A continuación, te proporciono más detalles sobre qué es el anime. El anime abarca una amplia variedad de géneros y temas, como 
+           <strong> <!--se utiliza para enfatizar partes del texto -->
+                    amor, aventura, ciencia ficción, cuentos infantiles, horror, fantasía y comedia.
+            </strong> 
+            <br> <!--salto de linea-->
+            Tradicionalmente, se dibujaba a mano, pero en la actualidad, gran parte de la producción se realiza con aplicaciones digitales.
+           Los guiones del anime se transmiten a través de   <span style="color: blue;">medios audiovisuales, como televisión, video doméstico y películas </span></p> <!--span para referenciar textos dentro de otras etiquetas-->
+            <hr>
+            <img src="imagenes/anime2.jpeg" width="200" height="200"/> <!--insertar imagenes en nuestra pagina-->
+            <!--etiquetas de hipervinculo-->
+            <div><!--ruta relativa-->
+                <a href="seccion1.html">Ampliar informacion</a> 
+            </div>
+            <div>
+             <!--ruta absoluta uso cuando no estoy en mi sitio-->
+                <a href="http://127.0.0.1:5500/blog/seccion1.html">ampliar información </a>
+            </div>
+            <div>
+              <p>
+               <a  target="_blank" href="https://es.wikipedia.org/wiki/Anime">visitar wikipedia</a>  <!--propiedad target para que me abra en otra pagina-->      
+              </p>
+            </div>
+        </section>
+       
+    </main>
+    <footer> <!--pie de pagina-->
+        <p>Copyright 2024</p>
+     
+    </footer>
+</body>
+</html>
